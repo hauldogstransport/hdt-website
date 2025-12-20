@@ -1,3 +1,33 @@
+// Add loaded class when page is fully loaded
+window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+    
+    // Parallax effect for hero images
+    const heroImages = document.querySelectorAll('.hero-image');
+    
+    function updateParallax() {
+        const scrollPosition = window.scrollY;
+        
+        heroImages.forEach(img => {
+            const speed = parseFloat(img.getAttribute('data-speed') || '0.5');
+            const yPos = -(scrollPosition * speed);
+            img.style.transform = `translateY(${yPos}px) rotate(${img.classList.contains('hero-image--left') ? '-5deg' : '5deg'})`;
+        });
+    }
+    
+    // Only run parallax on desktop
+    if (window.innerWidth > 1024) {
+        window.addEventListener('scroll', updateParallax);
+        window.addEventListener('resize', function() {
+            if (window.innerWidth <= 1024) {
+                window.removeEventListener('scroll', updateParallax);
+            } else {
+                window.addEventListener('scroll', updateParallax);
+            }
+        });
+    }
+});
+
 // Smooth scrolling for all anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

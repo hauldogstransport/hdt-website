@@ -261,9 +261,12 @@ nav a:not(.cta-button):hover::after {
 /* Hero Section */
 .hero {
     position: relative;
-    padding: 140px 0 120px;
+    padding: 120px 0;
     overflow: hidden;
     background: var(--primary);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
 }
 
 .hero-background {
@@ -301,38 +304,155 @@ nav a:not(.cta-button):hover::after {
     opacity: 0.5;
 }
 
-.hero-content {
+/* Hero Layout */
+.hero-container {
     position: relative;
-    z-index: 1;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
+    z-index: 2;
+    height: 100%;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
     color: var(--white);
 }
 
+.hero-visual {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+}
+
+.hero-visual__forklift,
+.hero-visual__rollback {
+    position: absolute;
+    max-width: 80%;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+    transition: transform 0.5s ease-out;
+}
+
+.hero-visual__forklift {
+    bottom: 3%;
+    left: 0;
+    max-height: 40vh;
+    transform: translateX(-5%) rotate(-5deg);
+    z-index: 3;
+}
+
+.hero-visual__rollback {
+    top: 3%;
+    right: 0;
+    max-height: 38vh;
+    transform: translateX(10%) rotate(5deg) translateY(-15px);
+    z-index: 2;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-text h1,
+.hero-text .hero-subtitle,
+.hero-cta {
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+}
+
+.hero-text h1 {
+    animation-delay: 0.2s;
+}
+
+.hero-text .hero-subtitle {
+    animation-delay: 0.4s;
+}
+
+.hero-cta {
+    animation-delay: 0.6s;
+}
+
+.hero-visual__forklift {
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-visual__rollback {
+    animation: float 6s ease-in-out 0.5s infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateX(-5%) translateY(0) rotate(-5deg);
+    }
+    50% {
+        transform: translateX(-5%) translateY(-10px) rotate(-3deg);
+    }
+}
+
+.hero-visual__rollback {
+    animation-name: floatReverse;
+}
+
+@keyframes floatReverse {
+    0%, 100% {
+        transform: translateX(10%) translateY(-35px) rotate(5deg);
+    }
+    50% {
+        transform: translateX(10%) translateY(-45px) rotate(3deg);
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animate images on load */
+.loaded .hero-image--left {
+    transform: translateY(0) rotate(-5deg);
+}
+
+.loaded .hero-image--right {
+    transform: translateY(0) rotate(5deg);
+}
+
 .hero-content h1 {
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 800;
     line-height: 1.1;
-    margin-bottom: 28px;
-    letter-spacing: -1.5px;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
 }
 
 .hero-subtitle {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.7;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
     opacity: 0.94;
     font-weight: 400;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 90%;
 }
 
 .hero-cta {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: 16px;
     flex-wrap: wrap;
 }
 
