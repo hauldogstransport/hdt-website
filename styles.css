@@ -261,18 +261,15 @@ nav a:not(.cta-button):hover::after {
 /* Hero Section */
 .hero {
     position: relative;
-    padding: 40px 0;
-    overflow: hidden; /* Changed from visible to contain the background */
+    padding: 60px 0 40px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 70vh;
+    min-height: auto;
     box-sizing: border-box;
     text-align: center;
-    transform-style: flat;
-    backface-visibility: visible;
-    perspective: none;
-    z-index: 1; /* Ensure proper stacking context */
+    z-index: 1;
 }
 
 .hero-background {
@@ -284,7 +281,7 @@ nav a:not(.cta-button):hover::after {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    opacity: 0.97;
+    opacity: 0.92;
     z-index: -1; /* Ensure it stays behind content */
 }
 
@@ -320,40 +317,19 @@ nav a:not(.cta-button):hover::after {
 
 .hero-content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 0;
-    padding: 0;
-    transform: none !important;
-    will-change: auto !important;
-    height: 100%;
-}
-
-.hero-image.left {
-    justify-content: center;
-}
-
-.hero-image.right {
-    justify-content: center;
-}
-
 .hero-text {
-    flex: 0 1 600px;
-    margin: 0 15px;
+    max-width: 800px;
     text-align: center;
     color: var(--white);
     z-index: 2;
@@ -361,37 +337,72 @@ nav a:not(.cta-button):hover::after {
 }
 
 .hero-text h1 {
-    font-size: 42px;
+    font-size: 38px;
     line-height: 1.2;
     margin-bottom: 20px;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-subtitle {
     font-size: 18px;
     margin-bottom: 30px;
     line-height: 1.6;
+    color: var(--white);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.hero-visual__forklift,
-.hero-visual__rollback {
+.hero-cta {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
     width: 100%;
-    height: 100%;
-    max-height: 500px; /* Increased max height */
+    max-width: 1000px;
+    margin: 20px auto 0;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-visual {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
     object-fit: contain;
     object-position: center;
-    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
-    transition: none !important;
-    transform: none !important;
-    will-change: auto !important;
-    transform-style: flat !important;
-    backface-visibility: visible !important;
-    perspective: none !important;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-/* Hero images are styled directly in the combined selector above */
-.hero-visual__rollback {
-    transform: none;
-    z-index: 2;
+.hero-visual:hover {
+    transform: translateY(-5px);
+}
+
+/* Ensure the rollback is on the right */
+.hero-images > :first-child {
+    order: 1;
+}
+
+.hero-images > :last-child {
+    order: 2;
 }
 
 /* Animation */
@@ -483,49 +494,54 @@ nav a:not(.cta-button):hover::after {
 .btn-large {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    padding: 16px 36px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 600;
+    justify-content: center;
+    padding: 12px 30px;
     font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: none;
-    cursor: pointer;
+    min-width: 180px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .btn-primary {
-    background: var(--white);
-    color: var(--primary);
-    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.25);
+    background-color: var(--primary);
+    color: white;
+    border: 2px solid var(--primary);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.35);
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--white);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: translateY(-3px);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .btn-large {
     background: var(--white);
     color: var(--primary);
-    padding: 20px 44px;
+    padding: 16px 40px;
     font-size: 18px;
-    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.5);
-    border: 2px solid rgba(255, 255, 255, 0.3);
     font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-large:hover {
