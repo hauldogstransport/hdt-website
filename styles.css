@@ -261,7 +261,7 @@ nav a:not(.cta-button):hover::after {
 /* Hero Section */
 .hero {
     position: relative;
-    padding: 40px 0 60px; /* Reduced top padding from 80px to 40px */
+    padding: 0px 0 0px; /* Reduced top padding from 80px to 40px */
     overflow: hidden;
     min-height: auto; /* Changed from 80vh to auto */
     display: flex;
@@ -278,9 +278,9 @@ nav a:not(.cta-button):hover::after {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, #f8a66f 0%, #ed7a1d 100%);
     opacity: 0.97;
-    z-index: -1; /* Ensure it stays behind content */
+    z-index: -1;
 }
 
 .hero-background::before {
@@ -334,7 +334,7 @@ nav a:not(.cta-button):hover::after {
     align-items: center;
     height: 100%;
     position: relative;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .hero-image {
@@ -386,7 +386,7 @@ nav a:not(.cta-button):hover::after {
     transition: none !important;
     position: relative;
     top: -100px;
-    transform: translateY(-500px);
+    transform: translateY(-20px);
     will-change: auto !important;
     transform-style: flat !important;
     backface-visibility: visible !important;
@@ -396,21 +396,19 @@ nav a:not(.cta-button):hover::after {
 .hero-visual__rollback {
     width: 120%;
     height: auto;
-    max-height: 400px; /* Increased from 300px */
+    max-height: 400px;
     object-fit: contain;
     object-position: center;
     filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
-    transition: none !important;
-    transform: none !important;
+    transform: rotate(6deg);
     will-change: auto !important;
     transform-style: flat !important;
     backface-visibility: visible !important;
-    perspective: none !important;
+    z-index: 2;
 }
 
 /* Hero images are styled directly in the combined selector above */
 .hero-visual__rollback {
-    transform: none;
     z-index: 2;
 }
 
@@ -430,7 +428,6 @@ nav a:not(.cta-button):hover::after {
 .hero-image img {
     will-change: auto;
     backface-visibility: hidden;
-    transform: none !important;
     transition: none !important;
 }
 
