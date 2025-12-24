@@ -261,18 +261,13 @@ nav a:not(.cta-button):hover::after {
 /* Hero Section */
 .hero {
     position: relative;
-    padding: 40px 0;
-    overflow: hidden; /* Changed from visible to contain the background */
+    padding: 40px 0 60px; /* Reduced top padding from 80px to 40px */
+    overflow: hidden;
+    min-height: auto; /* Changed from 80vh to auto */
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: 70vh;
     box-sizing: border-box;
-    text-align: center;
-    transform-style: flat;
-    backface-visibility: visible;
-    perspective: none;
-    z-index: 1; /* Ensure proper stacking context */
+    z-index: 1;
 }
 
 .hero-background {
@@ -319,28 +314,38 @@ nav a:not(.cta-button):hover::after {
 }
 
 .hero-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     position: relative;
     z-index: 2;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
+    align-items: center;
+}
+
+.hero-images {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    padding-top: 50px;
 }
 
 .hero-image {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 0;
-    padding: 0;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     transform: none !important;
     will-change: auto !important;
-    height: 100%;
 }
 
 .hero-image.left {
@@ -352,12 +357,11 @@ nav a:not(.cta-button):hover::after {
 }
 
 .hero-text {
-    flex: 0 1 600px;
-    margin: 0 15px;
-    text-align: center;
+    text-align: left;
     color: var(--white);
     z-index: 2;
-    padding: 0 15px;
+    max-width: 600px;
+    padding-right: 20px;
 }
 
 .hero-text h1 {
@@ -372,11 +376,27 @@ nav a:not(.cta-button):hover::after {
     line-height: 1.6;
 }
 
-.hero-visual__forklift,
-.hero-visual__rollback {
+.hero-visual__forklift {
     width: 100%;
-    height: 100%;
-    max-height: 500px; /* Increased max height */
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    object-position: center top;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+    transition: none !important;
+    position: relative;
+    top: -100px;
+    transform: translateY(-500px);
+    will-change: auto !important;
+    transform-style: flat !important;
+    backface-visibility: visible !important;
+    perspective: none !important;
+}
+
+.hero-visual__rollback {
+    width: 120%;
+    height: auto;
+    max-height: 400px; /* Increased from 300px */
     object-fit: contain;
     object-position: center;
     filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
@@ -470,11 +490,10 @@ nav a:not(.cta-button):hover::after {
 
 .hero-cta {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 16px;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 500px;
+    margin-top: 30px;
+    padding-left: 0;
 }
 
 /* Buttons */
@@ -1066,17 +1085,17 @@ footer {
         gap: 40px;
     }
     
-    .hero-image {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-    
     .hero-text {
         order: -1;
         width: 100%;
         max-width: 800px;
         margin: 0 auto;
         padding: 0 30px;
+    }
+    
+    .hero-images {
+        max-width: 500px;
+        margin: 0 auto;
     }
     
     .hero-visual__forklift,
@@ -1088,6 +1107,41 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-text {
+        text-align: center;
+        max-width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    
+    .hero-images {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .hero-visual__forklift {
+        max-height: 400px;
+        width: 110%;
+        top: -100px;
+        transform: translateY(-300px);
+    }
+    
+    .hero-visual__rollback {
+        max-height: 300px;
+        margin-top: -50px; /* Add space between images on mobile */
+    }
+    
+    .hero-cta {
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+    
     .hero-content h1 {
         font-size: 48px;
     }
@@ -1203,8 +1257,9 @@ footer {
 
     .hero-cta {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 16px;
+        padding-left: 0;
     }
 
     .hero-cta .btn-primary,
@@ -1212,6 +1267,7 @@ footer {
         max-width: 280px;
         width: 100%;
         justify-content: center;
+        margin-left: 0;
         text-align: center;
     }
 
