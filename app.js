@@ -2,30 +2,13 @@
 window.addEventListener('load', function() {
     document.body.classList.add('loaded');
     
-    // Parallax effect for hero images
-    const heroImages = document.querySelectorAll('.hero-image');
+    // Disable parallax effect completely to prevent any movement
+    // const heroImages = document.querySelectorAll('.hero-image');
+    // function updateParallax() {
+    //     // No-op to prevent any transforms
+    // }
     
-    function updateParallax() {
-        const scrollPosition = window.scrollY;
-        
-        heroImages.forEach(img => {
-            const speed = parseFloat(img.getAttribute('data-speed') || '0.5');
-            const yPos = -(scrollPosition * speed);
-            img.style.transform = `translateY(${yPos}px) rotate(${img.classList.contains('hero-image--left') ? '-5deg' : '5deg'})`;
-        });
-    }
-    
-    // Only run parallax on desktop
-    if (window.innerWidth > 1024) {
-        window.addEventListener('scroll', updateParallax);
-        window.addEventListener('resize', function() {
-            if (window.innerWidth <= 1024) {
-                window.removeEventListener('scroll', updateParallax);
-            } else {
-                window.addEventListener('scroll', updateParallax);
-            }
-        });
-    }
+    // No event listeners for parallax
 });
 
 // Smooth scrolling for all anchor links
