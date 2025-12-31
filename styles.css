@@ -264,7 +264,7 @@ nav a:not(.cta-button):hover::after {
     padding: 40px 0;
     overflow: hidden; /* Changed from visible to contain the background */
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     min-height: 70vh;
     box-sizing: border-box;
@@ -305,9 +305,9 @@ nav a:not(.cta-button):hover::after {
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 20px;
 }
 
 .hero-content {
@@ -362,20 +362,22 @@ nav a:not(.cta-button):hover::after {
     flex-wrap: wrap;
 }
 
-.hero-cta .btn-primary,
-.hero-cta .btn-secondary {
-    min-width: 180px;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+.hero-text {
+    flex: 0 1 600px;
+    margin: 0 15px;
+    text-align: center;
+    color: var(--white);
+    z-index: 2;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    backdrop-filter: blur(2px);
 }
 
-.hero-cta .btn-primary {
-    background-color: var(--primary);
-    color: white;
-    border: 2px solid var(--primary);
+.hero-text h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .hero-cta .btn-primary:hover {
@@ -487,49 +489,54 @@ nav a:not(.cta-button):hover::after {
 .btn-large {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    padding: 16px 36px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 600;
+    justify-content: center;
+    padding: 12px 30px;
     font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: none;
-    cursor: pointer;
+    min-width: 180px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .btn-primary {
-    background: var(--white);
-    color: var(--primary);
-    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.25);
+    background-color: var(--primary);
+    color: white;
+    border: 2px solid var(--primary);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.35);
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--white);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: translateY(-3px);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .btn-large {
     background: var(--white);
     color: var(--primary);
-    padding: 20px 44px;
+    padding: 16px 40px;
     font-size: 18px;
-    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.5);
-    border: 2px solid rgba(255, 255, 255, 0.3);
     font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-large:hover {
