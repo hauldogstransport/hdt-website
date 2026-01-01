@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="images/HDT_ROLLBACK_ALT.png">
     <meta name="google-site-verification" content="UEF0xyl7weXzgFXFtm_OXXFE05hYDkld9gcsqUA7MG0" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -18,7 +19,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="Haul Dogs Transport" class="logo-image">
+                <img src="images/logo.png" alt="Haul Dogs Transport" class="logo-image" width="1218" height="278" decoding="async">
             </div>
             <nav id="mainNav">
                 <a href="#how-it-works">Process</a>
@@ -26,7 +27,7 @@
                 <a href="#pricing">Pricing</a>
                 <a href="#request" class="cta-button">Get Started</a>
             </nav>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu" aria-controls="mainNav" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -34,10 +35,11 @@
         </div>
     </header>
 
+    <main id="main">
     <section class="hero">
         <div class="hero-background">
             <div class="hero-overlay"></div>
-            <img src="images/HDT_ROLLBACK_ALT.png" alt="Rollback Service" class="hero-bg-image">
+            <img src="images/HDT_ROLLBACK_ALT.png" alt="Rollback Service" class="hero-bg-image" width="1536" height="1024" decoding="async" fetchpriority="high">
         </div>
         <div class="container">
             <div class="hero-content-box">
@@ -55,7 +57,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>Simple Process, Professional Results</h2>
-                <p>Four easy steps to get your vehicle delivered</p>
+                <p>Three easy steps to get your vehicle ready for pickup</p>
             </div>
             <div class="process-timeline">
                 <div class="process-step">
@@ -154,7 +156,7 @@
                         <h3>Pricing by Location</h3>
                     </div>
                     <div class="pricing-image">
-                        <img src="images/HDT_POS.png" alt="Haul Dogs Transport - Point of Sale" class="pricing-pos-image">
+                        <img src="images/HDT_POS.png" alt="Haul Dogs Transport - Point of Sale" class="pricing-pos-image" width="1536" height="1024" loading="lazy" decoding="async">
                     </div>
                 </div>
                 <div class="pricing-card">
@@ -252,6 +254,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <footer>
         <div class="container">
