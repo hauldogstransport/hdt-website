@@ -876,13 +876,13 @@ nav a:not(.cta-button):hover::after {
 }
 
 .price-badge-small {
-    background: var(--gradient);
+    background: #10B981;
     color: var(--white);
     box-shadow: var(--shadow-sm);
 }
 
 .free-badge {
-    background: #10B981;
+    background: #732eff;
     color: var(--white);
     box-shadow: var(--shadow-sm);
 }
