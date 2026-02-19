@@ -1153,12 +1153,19 @@ nav a:not(.cta-button):hover::after {
 }
 
 .service-area-map {
-    max-width: 600px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     background: var(--white);
     border-radius: 12px;
     box-shadow: var(--shadow-md);
+}
+
+.pricing-map {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 .radius-map {
