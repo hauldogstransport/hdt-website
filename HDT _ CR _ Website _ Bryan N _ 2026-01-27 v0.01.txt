@@ -1,0 +1,449 @@
+﻿HDT | Website Change Request
+Prepared for: Brian Varner
+Date: January 27, 2026
+Subject: Complete Website Content & Layout Revision – $75 KC Metro Strategy Implementation
+________________
+
+
+Executive Summary
+This change request provides a comprehensive revision plan for hauldogstransport.com to align with your short-term business strategy: positioning the $75 KC metro auction pickup as the core value proposition. The current site does not mention the $75 price anywhere, lacks a clear service radius definition, and fails to prominently feature "loading help" and "no storage fees" as differentiators.
+This document covers all four main sections (Process, Why Choose Us, Pricing, Get Started) plus the Hero section, with specific copy recommendations, structural changes, and UX improvements optimized for QR code traffic from business cards.
+________________
+
+
+Current Site Audit Summary
+What Works Well
+* Clean, professional design with good visual hierarchy and orange brand color
+* Google Form integration for low-friction lead capture
+* Process section presents a logical 3-step flow
+* Mobile-friendly layout that should work well for QR scan traffic
+* Stripe payment mention builds trust and signals modern payment processing
+* Insurance focus appropriately targets auction buyers
+Critical Gaps (Relative to Strategy Goals)
+1. No $75 price mentioned anywhere on the site – biggest miss for the new strategy
+2. No visual KC metro radius map or geographic service area definition
+3. "Loading help included" is buried in generic copy, not called out as a differentiator
+4. "No storage fees" appears once in a long bullet list, not emphasized
+5. Vague "Fixed Pricing" messaging without actual dollar amounts weakens value prop
+6. No auction selector or dropdown – users must type free-form addresses
+7. Out-of-radius pricing is completely unaddressed – no guidance for Odessa or farther locations
+8. Process Step 3 ("Pickup from HDT") is confusing – reads like HDT picks up rather than customer picks up from HDT
+________________
+
+
+Section-by-Section Change Requests
+________________
+
+
+1. HERO SECTION (Top of Homepage)
+Current State
+* H1: "Professional Vehicle Transport from Kansas City Insurance Auctions"
+* Body: Generic description about reliable auto hauling
+* CTAs: "Request Pickup" and "Learn More"
+* Visual: Rollback truck image (good)
+
+
+  
+
+Issues
+* Does not mention $75 price in headline or subhead
+* No radius map or geographic clarity
+* Loading help and no storage fees not featured
+* Generic auction language doesn't distinguish KC metro from others
+Proposed Changes
+New Hero Layout:
+* Full-width hero with rollback truck image (keep current visual)
+* Add: KC radius map graphic overlaid or positioned next to hero text
+   * Map shows 20-mile circle centered on KC
+   * Pins for 8+ auctions: Copart Kansas City, Manheim Kansas City, SCA Kansas City, America's Auto Auction, Kansas City Auto Auction, OAI Auctions, plus 2 placeholders
+   * Large "$75" badge/callout in center of circle
+   * Map headline: "KC Metro Service Radius (~20 miles from center)"
+New Hero Copy:
+text
+H1: $75 Kansas City Metro Auction Pickup
+
+
+Subhead: Professional rollback transport from local auctions – includes loading help & no storage fees at our HDT hub.
+
+
+Bullets:
+✓ Pickup from 8+ KC auctions within 20-mile radius (Copart, Manheim, SCA, America's AA, OAI, more)
+✓ On-site loading assistance with photos
+✓ Bring directly to HDT – ready for your haul, zero storage charges
+
+
+[Optional Limited-Time Badge]: "Introductory Offer: Lock in $75 KC Metro Pricing"
+
+
+CTAs:
+[Primary Button] Select Auction & Request $75 Pickup (scrolls to #request)
+[Secondary Link] View Service Map & Pricing (scrolls to #pricing)
+
+
+Rationale:
+* Immediately communicates the $75 value for QR traffic who need quick answers
+* Radius map provides instant geographic clarity
+* Three bullets hit the three core benefits (pickup, loading, no storage)
+* Dual CTAs serve action-ready users and research-phase users
+________________
+
+
+2. PROCESS SECTION (How It Works)
+Current State
+* H2: "Simple Process, Professional Results"
+* Subhead: "Three easy steps to get your vehicle ready for pickup"
+* Steps:
+   * 01: Submit Your Request – "Fill out our online form with vehicle details, lot number, and delivery address"
+   * 02: Secure Payment – "Complete your fixed-fee payment through our secure Stripe gateway"
+   * 03: Pickup from HDT – "The vehicle is ready at this time for the buyer to arrange pickup from HDT"
+  Issues
+* No mention of $75 KC metro pricing in any step
+* Step 3 is confusing (reads like HDT picks up, not customer picks up from HDT)
+* "Loading help" and "no storage fees" are not explicitly mentioned in the process
+* "Fixed fee" is vague without the dollar amount
+Proposed Changes
+New H2 and Subhead:
+text
+H2: How Our $75 KC Metro Pickup Works
+
+
+Subhead: Three quick steps from auction lot to our HDT hub – includes loading help and no storage fees.
+
+
+Revised Step Copy:
+text
+Step 01 – Submit Your Auction Details
+Tell us where your vehicle is (auction name/location), lot number, and where you want it delivered. Most Kansas City metro auctions within our ~20-mile radius qualify for our $75 standard pickup.
+
+
+Step 02 – Confirm & Pay Your $75 Pickup
+For KC metro auctions within our service radius, the price is a flat $75 per vehicle. Pay securely via Stripe and we'll schedule your pickup fast.
+
+
+Step 03 – We Load, Haul, and Store Free at HDT
+We handle loading at the auction with proper equipment, take onsite photos, and bring the vehicle to our HDT location. No storage fees while it waits for your transporter or buyer to pick it up.
+
+
+Visual Enhancement:
+* Add small "$75" icon/badge next to Step 02
+* Add "FREE" icon/badge next to Step 03 for "no storage fees"
+Rationale:
+* Makes $75 KC metro pricing obvious in H2 and Step 01/02
+* Explicitly calls out loading help and no storage fees in Step 03
+* Clarifies that customer/transporter picks up FROM HDT (not that HDT picks up)
+* Reinforces ~20-mile radius concept repeatedly
+________________
+
+
+3. WHY CHOOSE US SECTION
+Current State
+* H2: "Why Choose Haul Dogs Transport"
+* Subhead: "Specialized service designed for insurance auction buyers"
+* Four Feature Blocks:
+   1. Kansas City Specialists – "Expert knowledge of all local insurance auction locations and processes"
+   2. Fixed Pricing – "Transparent, upfront costs with no hidden fees or surprise charges"
+   3. Fast Service – "Quick scheduling and efficient pickup to get your vehicle moving fast"
+   4. Reliable & Insured – "Professional service you can trust with full insurance coverage"
+  Issues
+* "Kansas City Specialists" is generic and doesn't mention the radius or $75
+* "Fixed Pricing" is vague – doesn't state the actual $75 price
+* No explicit mention of "loading help included" or "no storage fees" as differentiators
+* Four blocks are standard industry claims rather than HDT-specific value props
+Proposed Changes
+New H2 and Subhead:
+text
+H2: Why Kansas City Buyers Choose HDT
+
+
+Subhead: KC-metro-focused rollback service with flat $75 auction pickup, loading help, and no storage fees.
+
+
+Rewritten Five Feature Blocks:
+text
+Block 1: KC Metro Auction Specialists
+We focus on Kansas City-area auctions within roughly a 20-mile radius – we know the lanes, processes, and contacts at Copart, Manheim, SCA, and other major KC auction houses, so your vehicle moves fast.
+
+
+Block 2: $75 Standard KC Metro Pickup
+Most KC metro auctions qualify for our flat $75 per-vehicle pickup to the HDT hub. One clear price makes it easy to budget and say yes. No guessing, no surprises.
+
+
+Block 3: Loading Help Included
+We handle loading at the auction with proper rollback equipment and take photos at the gate so you know the vehicle is secure and on the truck. No excuses, no delays.
+
+
+Block 4: No Storage Fees at HDT
+Once at our HDT location, your vehicle can wait for your buyer or transporter with no storage charges – ideal for multi-week purchase strategies or coordinating with third-party haulers.
+
+
+Block 5: Insured, Professional Service
+You get fully insured transport, timely communication, and coordination with third-party haulers so you don't have to chase updates or worry about liability.
+
+
+Visual Icons:
+* Block 1: Location pin icon
+* Block 2: Dollar sign / "$75" badge
+* Block 3: Wrench/tool or truck icon
+* Block 4: Calendar/clock icon with "FREE" badge
+* Block 5: Shield/insurance icon
+Rationale:
+* Repositions "Why Choose Us" around the three signature benefits: $75, loading, no storage
+* Makes the KC radius a core identity rather than background detail
+* Adds a fifth block to properly separate "no storage fees" (currently buried)
+* Uses specific auction names (Copart, Manheim, SCA) to build local credibility
+________________
+
+
+4. PRICING SECTION
+Current State
+* H2: "Transparent Pricing"
+* Subhead: "Fixed rates with no hidden fees"
+* Two Subsections:
+   1. What Pricing Includes – 5 bullets (pickup to HDT, photos, hassle-free loading, no appointments, no loading excuses)
+   2. Pricing by Location – Map image with 4 sample locations and prices ($200-$250), plus "Standard Service" card with 7 bullets
+* CTA: "Get Your Quote" button
+  
+
+Issues
+* No $75 price displayed anywhere – the map shows $200-$250 for individual locations, which contradicts the $75 KC metro strategy
+* "Fixed rates" is vague without stating the standard KC metro price
+* Map is helpful but doesn't clearly define the KC metro radius or the $75 zone
+* "Standard Service" card lists features but no price
+* No distinction between "KC metro $75" and "outside radius custom quote"
+* "What Pricing Includes" is a good list but doesn't tie to $75
+Proposed Changes
+New H2 and Subhead:
+text
+H2: KC Metro Pricing & Service Area
+
+
+Subhead: Flat $75 per vehicle for most Kansas City metro auctions, plus simple custom quotes for farther locations.
+
+
+Restructured Pricing Section:
+Subsection 1: What Every $75 KC Metro Pickup Includes
+text
+Every KC metro $75 pickup includes:
+✓ Pickup from auction to secured HDT hub
+✓ Onsite photos of your vehicle at the auction
+✓ Professional loading with proper equipment
+✓ Coordination with your transporter or buyer
+✓ No storage fees at HDT while you arrange final transport
+
+
+Subsection 2: Simple Pricing by Service Area
+Add a clear pricing table (2 rows):
+Service Type
+	Price (per vehicle)
+	What's Included
+	KC Metro Auction Pickup (within ~20 miles)
+	$75
+	Pickup, loading help, photos, delivery to HDT, no storage fees
+	Outside KC Metro (e.g., Odessa, farther auctions)
+	Custom Quote
+	Case-by-case pricing based on distance and vehicle size – we'll call with your rate
+	Subsection 3: Service Area Map
+* Replace current map with updated version showing:
+   * 20-mile radius circle centered on KC
+   * "$75 ZONE" label prominently in the circle
+   * Pins for 8+ KC metro auctions with names (no individual prices)
+   * Outside the circle: "Custom Quote Area" label
+* Map headline: "KC Metro Service Radius (~20 miles from center)"
+* Map blurb: "Auctions inside this radius qualify for our $75 standard pickup. Outside? We'll send you a fast custom quote."
+Optional Microcopy (below table):
+text
+Note: Our $75 KC metro auction pickup is an introductory standard rate as we grow our Kansas City footprint. Rates may adjust in the future, but you'll always know the price before you pay.
+
+
+Updated CTA Button:
+text
+[Get $75 KC Metro Pickup or Custom Quote]
+
+
+Rationale:
+* Fixes the biggest gap: now the $75 price is explicitly stated multiple times
+* Pricing table provides instant clarity for KC metro vs. outside radius
+* Ties "What Pricing Includes" directly to the $75 KC metro service
+* Map now shows radius and $75 zone rather than confusing individual location prices
+* "Introductory" language gives flexibility for future price increases
+* Friendly "custom quote" messaging doesn't scare away out-of-radius customers
+________________
+
+
+5. GET STARTED / REQUEST SECTION
+Current State
+* H2: "Ready to Transport Your Vehicle?"
+* Body: "Complete our quick request form and we'll get back to you with confirmation and payment details promptly"
+* Bullets:
+   * Fast response time
+   * Secure payment processing
+   * Professional service guarantee
+* CTA: "Request Pickup Now" → Google Form (opens in new window)
+* Microcopy: "Opens in new window - Takes less than 3 minutes"
+  Issues
+* Does not restate the $75 KC metro price near the CTA (critical for QR traffic)
+* No distinction between KC metro and out-of-radius in the request flow
+* Bullets are generic trust signals rather than value prop reminders
+* Google Form presumably doesn't have an auction dropdown or KC metro pre-qualifier
+Proposed Changes
+New H2 and Subhead:
+text
+H2: Request a Pickup in 2 Minutes
+
+
+Subhead: KC metro auction pickups are just $75 per vehicle – outside the radius, we'll send a fast custom quote.
+
+
+Revised Bullets:
+text
+✓ Most Kansas City metro auctions: flat $75 per vehicle to HDT (loading & no storage included)
+✓ Outside KC metro or special vehicles: quick custom quote by phone or email
+✓ Fast confirmation and secure Stripe payment link once details are verified
+
+
+Updated CTA Buttons:
+text
+[Primary Button] Start $75 KC Metro Request
+(Above or next to button): "Select your auction and confirm it's in our KC metro radius on the next screen."
+
+
+[Secondary Text Link] Request Custom Quote for Other Locations
+
+
+Microcopy Near CTA:
+text
+Not sure if your auction is in the KC metro radius? Submit your info and we'll confirm your price before you pay.
+
+
+Google Form Enhancement (Recommendation for Form Itself):
+Add a dropdown field early in the form:
+text
+Field: "Auction Location"
+Dropdown Options:
+─ KC Metro Auctions ($75 Standard) ─
+• Copart Kansas City
+• Manheim Kansas City
+• SCA Kansas City
+• America's Auto Auction KC
+• Kansas City Auto Auction
+• OAI Auctions KC
+• [Other KC Metro Auction]
+
+
+─ Outside KC Metro (Custom Quote) ─
+• Odessa, MO
+• Other location (specify below)
+
+
+Helper Text: "If your auction isn't listed, choose 'Other location' and we'll confirm pricing before payment."
+
+
+Rationale:
+* Restates $75 KC metro pricing immediately before the CTA to reduce friction
+* Provides clear branch for out-of-radius customers without adding complexity
+* Bullets now reinforce value prop rather than generic trust signals
+* Microcopy reassures users who are uncertain about radius eligibility
+
+
+===================
+
+
+APPROVAL & NEXT STEPS
+Review & Approval Process
+Option A: Full Approval
+☐ Approve all changes as written – proceed with Phase 1 implementation immediately
+
+
+Here's what I recommend adding at the bottom of the change request for Brian Varner's review and approval:
+________________
+
+
+6. IMPLEMENTATION ROADMAP & PRIORITIES
+Phase 1: High-Priority Quick Wins (Week 1-2)
+Impact: Immediate alignment with $75 KC metro strategy
+1. Hero Section Update
+   * Update H1 to "$75 Kansas City Metro Auction Pickup"
+   * Revise subhead and bullets to feature loading help + no storage fees
+   * Update CTAs to reference $75
+2. Pricing Section Overhaul
+   * Add explicit "$75" pricing table
+   * Update map to show 20-mile radius "$75 Zone"
+   * Revise "What Pricing Includes" to tie to $75 KC metro service
+3. Get Started Section
+   * Add $75 pricing reminder in subhead
+   * Update bullets to reinforce KC metro value prop
+   * Add microcopy for out-of-radius reassurance
+Estimated Effort: 4-6 hours (copywriting + basic layout updates)
+Phase 2: Content & Messaging Refinement (Week 3-4)
+Impact: Improved clarity and conversion optimization
+4. Process Section Revision
+   * Update H2 and all three step descriptions
+   * Add $75 and "FREE" badges to steps
+5. Why Choose Us Rewrite
+   * Expand from 4 to 5 feature blocks
+   * Rewrite all copy to emphasize $75, loading help, no storage, KC radius
+Estimated Effort: 3-4 hours (copywriting only)
+Phase 3: Enhanced UX Features (Week 5-8)
+Impact: Reduced friction, better lead qualification
+6. Service Area Map Enhancement
+   * Design professional 20-mile radius map with "$75 Zone" branding
+   * Add auction pins with names (Copart KC, Manheim KC, SCA KC, etc.)
+   * Consider interactive map if budget allows
+7. Google Form Auction Dropdown
+   * Add structured auction selector with "KC Metro ($75)" and "Outside Metro (Custom Quote)" groups
+   * Include 8-10 specific KC metro auction names
+   * Add helper text for unlisted locations
+Estimated Effort: 6-10 hours (design + form configuration)
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+APPROVAL & NEXT STEPS
+Review & Approval Process
+Option A: Full Approval
+☐ Approve all changes as written – proceed with Phase 1 implementation immediately
+Option B: Selective Approval
+☐ Approve with modifications (please specify below which sections need revision):
+* Hero Section: _______________
+* Process Section: _______________
+* Why Choose Us: _______________
+* Pricing Section: _______________
+* Get Started: _______________
+Key Decision Points for Brian Varner
+Before proceeding, please confirm or provide guidance on:
+1. $75 Pricing Language
+   * ☐ Use "$75" everywhere as standard rate (recommended)
+   * ☐ Add "Introductory Offer" or "Limited Time" language for flexibility
+   * ☐ Other preference: _______________
+2. Service Radius Definition
+   * ☐ Use "~20-mile radius" language throughout (recommended)
+   * ☐ Use specific mile number: _______________
+   * ☐ Avoid specific radius, use "KC metro" only
+3. Out-of-Radius Messaging
+   * ☐ "Custom Quote" language (recommended – friendly and open)
+   * ☐ "Contact for Pricing" (more formal)
+   * ☐ Display higher price range (e.g., "$150-250 for outside radius")
+4. Map Design
+   * ☐ Simple static image with circle and pins (lower cost/time)
+   * ☐ Interactive map with hover states (higher engagement, more time)
+   * ☐ Provide existing map asset or need design from scratch?
+5. KC Metro Auction List
+   * Please confirm the 8 specific auctions to feature:
+________________
+      1. ________________
+      2. ________________
+      3. ________________
+      4. ________________
+      5. ________________
+      6. ________________
+      7. ________________
+      8.

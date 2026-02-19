@@ -404,6 +404,32 @@ nav a:not(.cta-button):hover::after {
     margin-right: auto;
 }
 
+.hero-bullets {
+    list-style: none;
+    margin: 30px auto;
+    padding: 0;
+    max-width: 700px;
+    text-align: left;
+}
+
+.hero-bullets li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero-bullets svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--primary-light);
+}
+
 .hero-cta {
     display: flex;
     justify-content: center;
@@ -652,6 +678,38 @@ nav a:not(.cta-button):hover::after {
     width: 100%;
 }
 
+.service-grid-five {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+}
+
+.service-grid-five .service-card:nth-child(5) {
+    grid-column: 1 / -1;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .service-grid-five {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .service-grid-five .service-card:nth-child(4),
+    .service-grid-five .service-card:nth-child(5) {
+        grid-column: auto;
+        max-width: none;
+    }
+    
+    .service-grid-five .service-card:nth-child(4) {
+        grid-column: 1 / 3;
+    }
+    
+    .service-grid-five .service-card:nth-child(5) {
+        grid-column: 3 / 4;
+    }
+}
+
 .service-card {
     background: var(--white);
     border-radius: 16px;
@@ -801,6 +859,32 @@ nav a:not(.cta-button):hover::after {
     position: relative;
     opacity: 0;
     transform: translateY(40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.price-badge-small {
+    background: #10B981;
+    color: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+.free-badge {
+    background: #732eff;
+    color: var(--white);
+    box-shadow: var(--shadow-sm);
 }
 
 .process-step.animated {
@@ -949,10 +1033,187 @@ nav a:not(.cta-button):hover::after {
 }
 
 .pricing-info ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
     padding: 12px 0;
     color: var(--gray-800);
     line-height: 1.7;
     font-size: 15px;
+}
+
+.pricing-info ul li svg {
+    width: 20px;
+    height: 20px;
+    color: var(--primary);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Pricing Table Styles */
+.pricing-table-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.pricing-table-section h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.pricing-table-section h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 40px 0 20px;
+    text-align: center;
+}
+
+.pricing-table {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 32px;
+}
+
+.pricing-table-header {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
+    gap: 16px;
+    padding: 20px;
+    background: var(--gradient);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.pricing-table-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
+    gap: 16px;
+    padding: 24px 20px;
+    border-bottom: 1px solid var(--gray-200);
+    align-items: center;
+}
+
+.pricing-table-row:last-child {
+    border-bottom: none;
+}
+
+.pricing-table-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pricing-table-cell strong {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.pricing-table-detail {
+    font-size: 13px;
+    color: var(--gray-600);
+    font-style: italic;
+}
+
+.pricing-table-price {
+    text-align: center;
+    align-items: center;
+}
+
+.price-badge {
+    background: var(--gradient);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: 800;
+    display: inline-block;
+    box-shadow: var(--shadow-md);
+}
+
+.custom-quote-badge {
+    background: var(--gray-600);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.pricing-map-section {
+    margin: 40px 0;
+}
+
+.service-area-map {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.pricing-map {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.radius-map {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.auction-pin,
+.auction-pin-outside {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.auction-pin:hover,
+.auction-pin-outside:hover {
+    transform: scale(1.1);
+}
+
+.auction-pin circle {
+    filter: drop-shadow(0 2px 4px rgba(237, 122, 29, 0.3));
+}
+
+.auction-pin-outside circle {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.zone-label rect {
+    filter: drop-shadow(0 4px 8px rgba(237, 122, 29, 0.3));
+}
+
+.map-legend {
+    opacity: 0.95;
+}
+
+.pricing-map-blurb {
+    text-align: center;
+    font-size: 16px;
+    color: var(--gray-600);
+    margin-top: 20px;
+    line-height: 1.7;
+}
+
+.pricing-cta {
+    display: block;
+    margin: 32px auto 0;
+    text-align: center;
+    max-width: 400px;
 }
 
 .pricing-info strong {
@@ -1021,6 +1282,14 @@ nav a:not(.cta-button):hover::after {
     opacity: 0.94;
 }
 
+.request-subtitle {
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 36px;
+    opacity: 0.94;
+    font-weight: 500;
+}
+
 .request-benefits {
     list-style: none;
 }
@@ -1048,6 +1317,14 @@ nav a:not(.cta-button):hover::after {
     margin-top: 20px;
     font-size: 15px;
     opacity: 0.85;
+}
+
+.form-microcopy {
+    margin-top: 12px;
+    font-size: 14px;
+    opacity: 0.8;
+    font-style: italic;
+    line-height: 1.6;
 }
 
 /* Footer */
@@ -1313,6 +1590,20 @@ footer {
         margin-bottom: 20px;
     }
 
+    .hero-bullets {
+        margin: 20px auto;
+    }
+
+    .hero-bullets li {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .hero-bullets svg {
+        width: 18px;
+        height: 18px;
+    }
+
     .hero-cta {
         flex-direction: column;
         gap: 12px;
@@ -1377,6 +1668,45 @@ footer {
         text-align: center;
     }
 
+    .pricing-table-header,
+    .pricing-table-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .pricing-table-header {
+        display: none;
+    }
+
+    .pricing-table-row {
+        padding: 20px 16px;
+    }
+
+    .pricing-table-cell {
+        text-align: center;
+    }
+
+    .price-badge {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+
+    .service-area-map {
+        padding: 10px;
+    }
+
+    .radius-map text {
+        font-size: 9px;
+    }
+
+    .zone-label text:first-of-type {
+        font-size: 20px;
+    }
+
+    .zone-label text:last-of-type {
+        font-size: 10px;
+    }
+
 
 }
 
@@ -1410,6 +1740,13 @@ footer {
         width: 70px;
         height: 70px;
         font-size: 24px;
+    }
+
+    .step-badge {
+        font-size: 12px;
+        padding: 4px 10px;
+        top: 5px;
+        right: 5px;
     }
 
 }
